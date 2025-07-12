@@ -8,7 +8,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - "${FRONTEND_PORT:-3000}:3000"
+      - "${FRONTEND_PORT:-3001}:3000"
     env_file: .env
     environment:
       - NODE_ENV=production
@@ -65,7 +65,7 @@ services:
       context: ./backend/scripts
       dockerfile: ./Dockerfile.postgres
     ports:
-      - "5432:5432"
+      - "5433:5432"
     env_file:
       - .env
     environment:
