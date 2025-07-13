@@ -1,11 +1,9 @@
-
 import asyncio
 from typing import Annotated
 from genai_session.session import GenAISession
 from genai_session.utils.context import GenAIContext
 
-AGENT_JWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0YWI3YTc5My1mOWRkLTQ0NTgtODgzYi02MGQ5NzEyOWJkMmYiLCJleHAiOjI1MzQwMjMwMDc5OSwidXNlcl9pZCI6IjdjYTY1MjZiLTVmMTktNDBmYy1hZmIyLTU1NWUzYTdiZjJkOCJ9.GL4_LV8VW2_PdCXvWV3karVT9syPEs40Cz4Eb6Mvv0U" # noqa: E501
- # noqa: E501
+AGENT_JWT = "<your JWT Token>"
 
 session = GenAISession(jwt_token=AGENT_JWT)
 
